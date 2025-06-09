@@ -3,7 +3,6 @@
     flex-direction: column;
     background-color: black;
     width: 100%;
-    height: 100dvh;
     color: white;
 }
 
@@ -87,8 +86,16 @@
 }
 
 .titleHigh{
-    font-size: 1px;
     display: flex;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
     color: white;
+}
+
+.highligh{
+       margin-left: 30px;
+       display: flex;
+       align-items: center;
+       gap: 30px;
+
 }

@@ -1,0 +1,23 @@
+.card{
+    cursor: pointer;
+    height: 400px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.card img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 12px;
+    font-weight: lighter;
+ 
+}
