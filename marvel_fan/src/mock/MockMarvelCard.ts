@@ -33,11 +33,3 @@ export const MockMarvelCard: MarvelCardProps[] = [
   }
 ];
 
-/**
- *  <MarvelCard 
-            image=""
-            title="Homem-Aranha"
-            description="O Homem-Aranha é um super-herói criado por Stan Lee e Steve Ditko, que apareceu pela primeira vez na revista Amazing Fantasy #15 em 1962."
-          />
-
- */
