@@ -3,7 +3,7 @@ import { SiMarvelapp } from "react-icons/si";
 import { BiSearch } from "react-icons/bi";
 import Menu from "../../../components/menu/menu";
 import MarvelCard from "../../../components/MarvelCard/card";
-import { MockMarvelCard } from "../../../mock/mock";
+import { MockMarvelCard } from "../../../mock/MockMarvelCard";
 
 const Home = () => {
   return (
