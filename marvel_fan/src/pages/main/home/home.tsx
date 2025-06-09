@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <div className={Style.home1}>
         <Menu />
-        <h1>MARVEL FAN, O LUGAR ONDE TODOS OS FÃS DESEJAM ESTAR,</h1>
+        <h1 className={Style.topTitle}>MARVEL FAN, O LUGAR ONDE TODOS OS FÃS DESEJAM ESTAR,</h1>
         <h2>EMBARCA NESTA AVENTURA!</h2>
         <button title="Começar a aventura!" className={Style.start}>
           Começar gratuitamente{" "}
@@ -28,21 +28,22 @@ const Home = () => {
               placeholder="Pesquise algo (Personagens, Comics, series ou historias) ..."
             />
           </div>
+
           <h1 className={Style.titleHigh}>DESTAQUES</h1>
           <div className={Style.highligh}>
             {MockMarvelCard.map((card, index) => (
               <MarvelCard
                 key={index}
+                id={card.id}
                 image={card.image}
                 title={card.title}
                 description={card.description}
               />
             ))}
           </div>
+          <h1 className={Style.news}>Encontre todas as novidades</h1>
         </div>
       </div>
-
-      <div className={Style.home2}></div>
       <footer></footer>
     </div>
   );

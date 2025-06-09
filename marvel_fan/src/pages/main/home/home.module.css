@@ -6,7 +6,7 @@
     color: white;
 }
 
-.home1 h1{
+.topTitle{
     font-size: 19px;
     text-align: center;
     margin-top: 100px;
@@ -44,17 +44,6 @@
     padding-top: 10px;
 }
 
-.home2{
-    background: url("../../../../../public/4844928.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: color;
-    background-color: #00000091;
-    width: 100%;
-    height: 100dvh;
-}
-
 .search{
     margin: auto;
     border-radius: 20px;
@@ -87,15 +76,25 @@
 
 .titleHigh{
     display: flex;
+    margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 30px;
     color: white;
+    font-size: 15px;
 }
 
 .highligh{
-       margin-left: 30px;
-       display: flex;
-       align-items: center;
-       gap: 30px;
-
+    margin:0 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
+
+.news{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
