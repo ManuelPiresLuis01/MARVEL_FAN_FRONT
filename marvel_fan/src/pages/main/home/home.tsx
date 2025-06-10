@@ -28,10 +28,7 @@ const Home = () => {
             <i className={Style.iconSearch}>
               <BiSearch />
             </i>
-            <input
-              type="search"
-              placeholder="Pesquise algo (Personagens, Comics, series ou historias) ..."
-            />
+            <input type="search" placeholder="Pesquise algo (Personagens, Comics, series ou historias) ..." />
           </div>
 
           <div className={Style.container}>
