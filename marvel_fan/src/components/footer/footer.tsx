@@ -22,7 +22,7 @@ const Footer = () => {
         </ul>
         <div className={Style.selectSearch}>
           <select>
-            <option value="">Selecionar Idioma</option>
+            <option disabled>Selecionar Idioma</option>
             <option value="">Português</option>
             <option value="">Inglês</option>
             <option value="">Francês</option>

@@ -65,6 +65,12 @@
     
 }
 
+.selectSearch select option {
+  background-color: white;
+  color: black;
+    
+}
+
 .iconSearch {
   margin-right: -10px;
   color: #ffffff34;
