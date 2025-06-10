@@ -4,3 +4,10 @@ export interface MarvelCardProps {
   title: string;
   description: string;
 }
+
+export interface NoveltyProps {
+  id: string;
+  banner: string;
+  title: string;
+  description: string;
+}
