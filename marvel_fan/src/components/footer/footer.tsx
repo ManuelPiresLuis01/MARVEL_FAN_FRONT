@@ -6,6 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
   return (
     <footer className={Style.footer}>
       <div className={Style.footerContent}>
@@ -52,7 +53,7 @@ const Footer = () => {
       </div>
       <p>
         Site developed by Manuel Pires Luís | Data provided by Marvel. ©{" "}
-        {new Date().getFullYear()} MARVEL
+        {currentYear} MARVEL
       </p>
     </footer>
   );
