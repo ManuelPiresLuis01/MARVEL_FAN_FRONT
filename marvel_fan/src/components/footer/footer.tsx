@@ -1,4 +1,5 @@
 import Style from "./footer.module.css";
+import Logo from "../ui/marvelLogo/Logo";
 import { BiSearch } from "react-icons/bi";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -8,10 +9,20 @@ const Footer = () => {
   return (
     <footer className={Style.footer}>
       <div className={Style.footerContent}>
+        <Logo />
         <ul>
-          <li><FaFacebook />Facebook</li>
-          <li><RiInstagramFill />Instagram</li>
-          <li><BsTwitterX />Twitter</li>
+          <li>
+            <FaFacebook />
+            Facebook
+          </li>
+          <li>
+            <RiInstagramFill />
+            Instagram
+          </li>
+          <li>
+            <BsTwitterX />
+            Twitter
+          </li>
         </ul>
         <ul>
           <li>Home</li>
@@ -39,7 +50,10 @@ const Footer = () => {
           <p className={Style.Fquestion}>Perguntas frequentes !</p>
         </div>
       </div>
-      <p>Site developed by Manuel Pires Luís | Data provided by Marvel. © {new Date().getFullYear()} MARVEL</p>
+      <p>
+        Site developed by Manuel Pires Luís | Data provided by Marvel. ©{" "}
+        {new Date().getFullYear()} MARVEL
+      </p>
     </footer>
   );
 };
