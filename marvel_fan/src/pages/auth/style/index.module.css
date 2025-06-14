@@ -43,6 +43,7 @@
 }
 .resend{
     margin-top: 10px;
+    cursor: pointer;
 }
 .container input,
 .container select {

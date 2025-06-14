@@ -3,6 +3,8 @@ import { Navigate } from 'react-router-dom';
 import Login from './pages/auth/login';
 import Registration from './pages/auth/registration';
 import ActivateAccount from './pages/auth/activateaccount';
+import NewPassword from './pages/auth/newpassword';
+import Recovery from './pages/auth/recovery';
 import Home from './pages/main/home/home';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="registration" element={<Registration />} />
             <Route path="activate/:email" element={<ActivateAccount />} />
+            <Route path="newpass/:email" element={<NewPassword />} />
+            <Route path="recovery" element={<Recovery/>} />
           </Route>
            <Route path="/v1">
             <Route path="home" element={<Home />} />

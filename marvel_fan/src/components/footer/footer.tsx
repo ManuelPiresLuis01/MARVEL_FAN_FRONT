@@ -12,6 +12,7 @@ const Footer = () => {
       <div className={Style.footerContent}>
         <Logo />
         <ul>
+          <li className={Style.title}>Contactos</li>
           <li>
             <FaFacebook />
             Facebook
@@ -26,6 +27,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul>
+           <li className={Style.title}>Navegação</li>
           <li>Home</li>
           <li>Personagens</li>
           <li>Comics</li>

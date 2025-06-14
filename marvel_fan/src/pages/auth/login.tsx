@@ -22,7 +22,7 @@ const Login = () => {
                     <button className={Style.login}>Entrar</button>
                     <button className={Style.google}>Entrar com Google <i className={Style.red} ><FaGoogle /></i></button>
                     <div className={Style.authlinks}>
-                        <Link to={""}>Esqueceu a senha?</Link>
+                        <Link to={"/auth/recovery"}>Esqueceu a senha?</Link>
                         <p>Novo? <Link to={"/auth/registration"}>Crie uma conta</Link></p>
                     </div>
                 </form>

@@ -25,7 +25,7 @@ const Registration = () => {
                 <form onSubmit={submit}>
                     <h1>Registro</h1>
                     <input type="text" placeholder="Nome" required />
-                    <input type="email" placeholder="Email " onChange={(e)=>setEmail(e.target.value)}required />
+                    <input type="email"  placeholder="Email " onChange={(e)=>setEmail(e.target.value)}required />
                     <input type="password" placeholder="Senha" />
                     <input type="tel" placeholder="Numero de telefone " />
                     <select required>
