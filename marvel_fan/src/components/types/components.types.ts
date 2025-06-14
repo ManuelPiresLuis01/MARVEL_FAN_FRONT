@@ -11,3 +11,8 @@ export interface NoveltyProps {
   title: string;
   description: string;
 }
+
+export interface TermsModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}

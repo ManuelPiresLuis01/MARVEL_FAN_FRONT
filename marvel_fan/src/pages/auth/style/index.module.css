@@ -36,11 +36,16 @@
 
 .container input,
 .container button,
-.remember ,.authlinks{
+.container select,
+.remember,
+.authlinks,.resend {
     width: 90%;
 }
-
-.container input {
+.resend{
+    margin-top: 10px;
+}
+.container input,
+.container select {
     border-radius: 30px;
     height: 30px;
     margin-bottom: 10px;
@@ -63,30 +68,42 @@
     cursor: pointer;
 }
 
-.container button i{
+.container button i {
     font-size: 19px;
     margin-top: 5px;
 }
+
 .login {
     background-color: #ed1d24;
     color: white;
 
 }
 
-.login:hover{
-     background-color: #9e0308;
+.login:hover {
+    background-color: #9e0308;
 }
 
-.google:hover{
+.google:hover {
     background-color: #cacaca;
 }
+
 .remember {
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     gap: 5px;
 }
 
+.remember span {
+    color: #808080da;
+}
+
+.remember span:hover,.resend:hover{
+    color: #ff00009d;
+    cursor: pointer;
+  text-decoration: underline;
+}
 .remember i {
     margin-top: 4px;
     font-size: 20px;
@@ -96,22 +113,34 @@
     color: #ff00009d;
 }
 
-.authlinks{
+.authlinks {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.authlinks a:hover{
-   color: #ff00009d;
+.authlinks a:hover {
+    color: #ff00009d;
 }
 
-.error{
+.error {
     color: #ff00009d;
     font-size: 14px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.container select ,.date{
+  outline: none;
+  color: #ffffff55;
+  cursor: pointer;
+}
+
+.container select option {
+  background-color: white;
+  color: black;
+    
 }
