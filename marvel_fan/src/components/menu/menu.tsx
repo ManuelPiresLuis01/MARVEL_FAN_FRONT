@@ -15,8 +15,8 @@ const Menu = ()   => {
           </ul>
 
           <div className={Style.authLinks}>
-              <div title="Entrar" className={Style.login} >Entrar</div> 
-              <div title="Registrar-se" className={Style.registration} >Cadastrar-se</div>
+              <Link to="/auth/login" title="Entrar" className={Style.login} >Entrar</Link> 
+              <Link to="/auth/register" title="Registrar-se" className={Style.registration} >Cadastrar-se</Link>
           </div>
         </nav>
   );

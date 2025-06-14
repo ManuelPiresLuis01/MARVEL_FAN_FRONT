@@ -1,0 +1,117 @@
+.container {
+    background: url(../../../../public/4844928.jpg);
+    height: 100dvh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #000000b4;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.container h1 {
+    margin: 0 0 20px 0;
+    text-align: left;
+    width: 98%;
+}
+
+.container form {
+    background-color: #000000a8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.container input,
+.container button,
+.remember ,.authlinks{
+    width: 90%;
+}
+
+.container input {
+    border-radius: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    background-color: #80808052;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+
+.container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container button i{
+    font-size: 19px;
+    margin-top: 5px;
+}
+.login {
+    background-color: #ed1d24;
+    color: white;
+
+}
+
+.login:hover{
+     background-color: #9e0308;
+}
+
+.google:hover{
+    background-color: #cacaca;
+}
+.remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.remember i {
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.red {
+    color: #ff00009d;
+}
+
+.authlinks{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.authlinks a:hover{
+   color: #ff00009d;
+}
+
+.error{
+    color: #ff00009d;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
