@@ -7,25 +7,31 @@ import Style from "./style/index.module.css"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import type { user } from "../../service/types/user.types";
+import { Registry } from "../../service/authservice/registry";
 
 const Registration = () => {
     const navigate = useNavigate();
     const [terms, setTerms] = useState<boolean>(false)
     const [showModal, setShowModal] = useState<boolean>(false);
     const [error, setError] = useState<string>("");
-    const[email,setEmail] = useState<string>("")
+    const [user, setUser] = useState<user>({} as user)
+    const submit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            await Registry(user)
+            navigate(`/auth/activate/${user.email}`);
+        } catch (error: any) {
 
-    const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    navigate(`/auth/activate/${email}`);
-};
+        }
+    };
     return (
         <div>
             <div className={Style.container}>
                 <form onSubmit={submit}>
                     <h1>Registro</h1>
                     <input type="text" placeholder="Nome" required />
-                    <input type="email"  placeholder="Email " onChange={(e)=>setEmail(e.target.value)}required />
+                    <input type="email" placeholder="Email " onChange={(e) => setUser({ ...user, email: e.target.value })} required />
                     <input type="password" placeholder="Senha" />
                     <input type="tel" placeholder="Numero de telefone " />
                     <select required>

@@ -1,6 +1,7 @@
 import styles from './termsmodal.module.css';
 import type { TermsModalProps } from '../../types/components.types';
 import termsText from '../../../mock/terms';
+import { FaArrowLeft } from "react-icons/fa";
 
 const TermsModal = ({ isOpen, onClose }: TermsModalProps) => {
   if (!isOpen) return null;
@@ -19,10 +20,7 @@ const TermsModal = ({ isOpen, onClose }: TermsModalProps) => {
           <button className={styles.button1} onClick={() => {
             onClose();
           }}>
-            Aceitar
-          </button>
-          <button className={styles.button2} onClick={onClose}>
-            Recusar
+            <i><FaArrowLeft /></i>
           </button>
         </div>
       </div>
